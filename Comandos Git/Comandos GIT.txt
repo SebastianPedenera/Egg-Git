@@ -1,0 +1,99 @@
+git init                                             inicializar una carpeta
+git remote add <nombre remoto> <Url del repositorio> conectar con el repositorio la carpeta
+gir add .                                            agrega todos los archivos para el proximo commit, el punto es importante 
+git commit -m           			     crea una copia de seguridad local, siempre tiene que ir con un mensaje aclarando los cambios hechos
+git remote -v             			     corrobora que este bien la url
+git push <nombre remoto> <rama>            	     envia los archivos a la nube, la rama por lo general es la main para el curso pero en el futuro podria ser distinta
+git status              			     checkea el estado de los archivos de la carpeta
+git pull <nombre remoto> <rama>         	     clona la rama en una carpeta
+git fetch              				     muestra las demas ramas existentes
+git checkout <rama>              		     nos metemos en una rama para operar en ella
+git log             				     es un historial de los commit hechos
+git diff                			     muestra las diferencias con el commit anterior y los archivos actuales
+git config --global user.name "nombre"               sirve para cambiar nombre 
+git config --global user.email "email"
+
+git branch -M main 				     sirve para crear la rama main en un repositorio nuevo.
+git push -u <nombre remoto> <rama>		     sirve para reescribir una rama con un archivo local
+git branch					     sirve para crear ramas,cambiarles el nombre, copiar y eliminar https://git-scm.com/docs/git-branch
+git config --global credential.helper wincred        
+
+git --help                    			     explica que hacen todos los comandos, ojo estan en ingles.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+git init: 		Este comando inicializa un nuevo repositorio de Git en tu proyecto. 
+				> Para hacerlo, solo tienes que ejecutar git init en el directorio raíz de tu proyecto.
+
+
+
+git add: 		Este comando agrega los cambios realizados en un archivo a la zona de preparación (staging area) de Git. 
+				> Para hacerlo, ejecuta git add [nombre_del_archivo] o git add . para agregar todos los archivos modificados.
+
+
+
+git commit: 		Este comando guarda los cambios en la zona de preparación en el historial de Git. 
+				> Para hacerlo, ejecuta git commit -m "[mensaje_de_commit]". 
+				El mensaje de commit debe ser una descripción breve de los cambios realizados.
+
+
+
+git push: 		Este comando sube los cambios realizados a un repositorio remoto en Git. 
+				> Para hacerlo, ejecuta git push [nombre_del_repositorio] [rama]. 
+				El nombre del repositorio y la rama deben ser los correspondientes a tu proyecto.
+
+
+
+git pull: 		Este comando descarga los cambios realizados en un repositorio remoto a tu repositorio local. 
+				> Para hacerlo, ejecuta git pull [nombre_del_repositorio] [rama].
+
+
+
+git status: 		Este comando muestra el estado actual de tu repositorio, incluyendo los archivos modificados, eliminados o agregados. 
+				> Para hacerlo, ejecuta git status.
+
+
+
+git log: 		Este comando muestra el historial de commits de tu repositorio. 
+				> Para hacerlo, ejecuta git log.
+
+
+
+git branch: 		Este comando muestra las ramas de tu repositorio. 
+				> Para hacerlo, ejecuta git branch.
+
+
+
+git checkout: 		Este comando cambia de rama o de commit en tu repositorio. 
+				> Para hacerlo, ejecuta git checkout [rama_o_commit].
+
+
+
+git merge: 		Este comando fusiona los cambios realizados en una rama a otra rama. 
+				> Para hacerlo, primero cambia a la rama de destino con git checkout [rama_destino] y luego ejecuta git merge [rama_origen].
+
+
+
+git clone: 		Este comando crea una copia de un repositorio remoto en tu computadora. 
+				> Para hacerlo, ejecuta git clone [url_del_repositorio].
+
+
+
+git pull --rebase: 	Este comando descarga los cambios realizados en un repositorio remoto y los aplica por encima de tus cambios locales. 
+				> Para hacerlo, ejecuta git pull --rebase.
+
+
+
+git stash: 		Este comando guarda temporalmente los cambios realizados en tus archivos sin hacer commit. 
+				> Para hacerlo, ejecuta git stash.
+
+
+
+git reset: 		Este comando deshace los cambios realizados en un archivo y lo regresa al último commit. 
+				> Para hacerlo, ejecuta git reset [nombre_del_archivo].
+
+
+
+git remote: 		Este comando muestra los repositorios remotos asociados a tu repositorio local. 
+				> Para hacerlo, ejecuta git remote.
+
